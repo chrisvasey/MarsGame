@@ -44,24 +44,24 @@ var keys = [false, false, false, false, false, false];
 	var music_On = true;
 	var music_Volume = 1;
 	
-	var music_splash = new Howl({src:["assets/audio/music_splash.wav"],
+	var music_splash = new Howl({src:["assets/vendor/game/audio/music_splash.wav"],
 	buffer: true,
 	loop: true
 	});
 	//music_splash.on('pause',function(){music_splash.stop();});
-	var music_inGame = new Howl({src:["assets/audio/music_inGame.wav"],
+	var music_inGame = new Howl({src:["assets/vendor/game/audio/music_inGame.wav"],
 	buffer: true,
 	loop: true
 	});
-	var music_endGame = new Howl({src:["assets/audio/music_endGame.wav"],
+	var music_endGame = new Howl({src:["assets/vendor/game/audio/music_endGame.wav"],
 	buffer:true,
 	loop: true
 	});
-	var sfx_shot = new Howl({src:["assets/audio/sfx_shot.wav","assets/audio/sfx_shot.mp3"]});
-	var sfx_asteroidExplode = new Howl({src:["assets/audio/sfx_asteroidExplode.wav","assets/audio/sfx_asteroidExplode.mp3"]});
-	var sfx_powerupGet = new Howl({src:["assets/audio/sfx_powerupGet.wav","assets/audio/sfx_powerupGet.mp3"],
+	var sfx_shot = new Howl({src:["assets/vendor/game/audio/sfx_shot.wav","assets/vendor/game/audio/sfx_shot.mp3"]});
+	var sfx_asteroidExplode = new Howl({src:["assets/vendor/game/audio/sfx_asteroidExplode.wav","assets/vendor/game/audio/sfx_asteroidExplode.mp3"]});
+	var sfx_powerupGet = new Howl({src:["assets/vendor/game/audio/sfx_powerupGet.wav","assets/vendor/game/audio/sfx_powerupGet.mp3"],
 	buffer: true});
-	var sfx_shipCrash = new Howl({src:["assets/audio/sfx_shipCrash.wav"]});
+	var sfx_shipCrash = new Howl({src:["assets/vendor/game/audio/sfx_shipCrash.wav"]});
 /**********************************************************************************************************************************************
 /************* Character Section **************************************************************************************************************
 /****																																	   ****
@@ -1355,21 +1355,21 @@ function ToggleSFX()
 
 function InitGraphics()
 {
-	gfx_sfx_toggleOnImg.src = "assets/img/Image_SFXToggleOn.png";
-	gfx_sfx_toggleOffImg.src = "assets/img/Image_SFXToggleOff.png";
+	gfx_sfx_toggleOnImg.src = "assets/vendor/game/img/Image_SFXToggleOn.png";
+	gfx_sfx_toggleOffImg.src = "assets/vendor/game/img/Image_SFXToggleOff.png";
 	
-	gfx_splashImg.src = "assets/img/bgImage_splash.png";
-	gfx_backgroundImg.src = "assets/img/bgImage_space.png"; //does this cache can we speed this up
-	gfx_backgroundImgParallax.src = "assets/img/bgImage_StarsParallax.png"; //does this cache can we speed this up
-	gfx_backgroundImgParallaxForeground.src = "assets/img/bgImage_StarsParallaxForeground.png"; //does this cache can we speed this up
-	char_gfx_characterSprite.src = "assets/img/Sprite_spaceship.png";//"assets/img/Image_spaceship.png";
-	char_bullets_gfx_bulletImage.src = "assets/img/Image_spaceshipBullet.png";
-	AI_asteroid_gfx_asteroidImage.src = "assets/img/Sprite_asteroid.png";
-	AI_powerup_gfx_ShieldPowerupImage.src = "assets/img/Image_powerup_shield.png";
-	AI_powerup_gfx_RapidFirePowerupImage.src = "assets/img/Image_powerup_rapidfire.png";
-	AI_powerup_gfx_ClearScreenPowerupImage.src = "assets/img/Image_powerup_clearscreen.png";
-	cutscene_gfx_stormImage.src = "assets/img/bgImage_Storm.png";
-	gfx_char_health.src="assets/img/Image_charHealth.png";
+	gfx_splashImg.src = "assets/vendor/game/img/bgImage_splash.png";
+	gfx_backgroundImg.src = "assets/vendor/game/img/bgImage_space.png"; //does this cache can we speed this up
+	gfx_backgroundImgParallax.src = "assets/vendor/game/img/bgImage_StarsParallax.png"; //does this cache can we speed this up
+	gfx_backgroundImgParallaxForeground.src = "assets/vendor/game/img/bgImage_StarsParallaxForeground.png"; //does this cache can we speed this up
+	char_gfx_characterSprite.src = "assets/vendor/game/img/Sprite_spaceship.png";//"assets/vendor/game/img/Image_spaceship.png";
+	char_bullets_gfx_bulletImage.src = "assets/vendor/game/img/Image_spaceshipBullet.png";
+	AI_asteroid_gfx_asteroidImage.src = "assets/vendor/game/img/Sprite_asteroid.png";
+	AI_powerup_gfx_ShieldPowerupImage.src = "assets/vendor/game/img/Image_powerup_shield.png";
+	AI_powerup_gfx_RapidFirePowerupImage.src = "assets/vendor/game/img/Image_powerup_rapidfire.png";
+	AI_powerup_gfx_ClearScreenPowerupImage.src = "assets/vendor/game/img/Image_powerup_clearscreen.png";
+	cutscene_gfx_stormImage.src = "assets/vendor/game/img/bgImage_Storm.png";
+	gfx_char_health.src="assets/vendor/game/img/Image_charHealth.png";
 	
 	gfx_sfx_togglePosition = [10, (canvas.height - sfx_toggleButtonBox[1]) - 10];
 	
